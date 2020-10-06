@@ -52,26 +52,7 @@ header .container .navbar-menu {
     width: 55%;
 
 }
-@media screen and (max-width: 1200px) {
-    .logo {
-        width: 10%;
-        display: block;
-        float: none;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-    }
-    .navbar-menu {
-        width: 60%;
-        display: block;
-        float: none;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-    }
-}
+
 header .container .navbar .navbar-ul .nav-items {
     display: inline-block;
     padding: 0 5px;
@@ -106,6 +87,26 @@ header .container .navbar .navbar-ul .nav-items:last-child a {
     border-right: none;
 }
 
+@media screen and (max-width: 767) {
+    .logo {
+        width: 100%;
+        display: block;
+        float: none;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .navbar-menu {
+        width: 100%;
+        display: block;
+        float: none;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+}
 
 /* Header 2nd page showcase starts from here! */
 
@@ -153,6 +154,8 @@ header .container .navbar .navbar-ul .nav-items:last-child a {
     cursor: pointer;
     transform: translate(-50%, -50%);
 }
+
+
 /* Section parts start from here */
 
 section {
@@ -331,6 +334,10 @@ footer .container .footer-feature .col-4 p {
 footer .container .footer-feature .col-4 a {
     color: white;
     text-decoration: none;
+}
+footer .container .footer-feature .col-4 a:hover {
+    color: coral;
+    transition: .3s;
 }
 footer .container .footer-feature .col-4 span {
     display: block;
